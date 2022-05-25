@@ -1,0 +1,38 @@
+version: '3.7'
+services:
+  app1:
+    container_name: app1
+    image: php:8.1-alpine3.15
+    networks:
+      - app_rabbitmq
+    volumes:
+      - ".:/app"
+    ports:
+      - "8000:8000"
+    command: sh -c "docker-php-ext-install sockets && php -S 0.0.0.0:8000 -t /app/src/"
+
+  app2:
+    container_name: app2
+    image: php:8.1-alpine3.15
+    networks:
+      - app_rabbitmq
+    volumes:
+      - ".:/app"
+    ports:
+      - "8001:8001"
+    command: sh -c "docker-php-ext-install sockets && php -S 0.0.0.0:8001 -t /app/src/"
+
+  rabbitmq:
+    container_name: rabbitmq
+    image: rabbitmq:3.9-management-alpine
+    networks:
+      - app_rabbitmq
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    env_file:
+      - ./.env
+
+networks:
+  app_rabbitmq:
+    driver: bridge
