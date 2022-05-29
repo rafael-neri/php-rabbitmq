@@ -1,0 +1,103 @@
+{
+  // Desabilita a Telemetria
+  "redhat.telemetry.enabled": false,
+
+  // Configurações dos arquivos
+  "files.autoSave": "onFocusChange",
+  "files.encoding": "utf8",
+  "files.insertFinalNewline": true,
+  "files.restoreUndoStack": true,
+  "files.saveConflictResolution": "askUser",
+  "files.enableTrash": true,
+  "files.eol": "\n",
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": false,
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/vendor/**": true,
+  },
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true,
+    "**/.idea": true
+  },
+
+  // Configurações do Workbench
+  "workbench.colorTheme": "Darcula",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.sideBar.location": "left",
+  "workbench.activityBar.visible": true,
+  "workbench.activityBar.iconClickBehavior": "toggle",
+  "workbench.tree.indent": 15,
+
+  // Configurações da área de navegação dos arquivos
+  "explorer.compactFolders": false,
+  "explorer.openEditors.visible": 0,
+  "explorer.autoReveal": false,
+  "explorer.decorations.badges": true,
+  "explorer.confirmDelete": true,
+  "explorer.confirmDragAndDrop": true,
+  "explorer.decorations.colors": true,
+  "explorer.enableDragAndDrop": true,
+  "explorer.incrementalNaming": "smart",
+  "explorer.sortOrder": "default",
+
+  // Configurações do Editor
+  "editor.suggestSelection": "recentlyUsedByPrefix",
+  "editor.comments.insertSpace": true,
+  "editor.autoClosingBrackets": "languageDefined",
+  "editor.fontFamily": "'Jetbrains Mono', 'Fira Code', 'Consolas', 'Courier New', 'monospace'",
+  "editor.fontSize": 15,
+  "editor.lineHeight": 1.3,
+  "editor.fontLigatures": true,
+  "editor.folding": true,
+  "editor.showFoldingControls": "always",
+  "editor.formatOnSave": false,
+  "editor.formatOnPaste": true,
+  "editor.linkedEditing": true,
+  "editor.minimap.enabled": false,
+  "editor.renderWhitespace": "selection",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+
+  // Configuração do Search
+  "search.exclude": {
+    "**/vendor": true
+  },
+
+  "workbench.startupEditor": "readme",
+
+  // Configurações de Debug
+  "debug.allowBreakpointsEverywhere": true,
+  "debug.console.closeOnEnd": false,
+  "debug.inlineValues": "off",
+  "debug.toolBarLocation": "docked",
+  "debug.console.wordWrap": true,
+  "debug.showInStatusBar": "never",
+  "debug.openDebug": "openOnDebugBreak",
+
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+
+  "json.maxItemsComputed": 25000,
+
+  // Configuração da extensão Hungry Delete
+  "hungryDelete.enableSmartBackspace": true,
+  "hungryDelete.considerIncreaseIndentPattern": false,
+  "hungryDelete.followAbovelineIndent": false,
+  "hungryDelete.keepOneSpace": false,
+
+  // PHP
+  "php.validate.enable": true,
+  "php.suggest.basic": false,
+  "phpannotations.enabled": true,
+
+  // GitLens
+  "gitlens.hovers.enabled": false,
+
+  // PHP Inteliphense
+  "intelephense.diagnostics.undefinedConstants": false
+}

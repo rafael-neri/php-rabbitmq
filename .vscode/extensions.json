@@ -1,0 +1,19 @@
+{
+  "recommendations": [
+    "rokoroku.vscode-theme-darcula",
+    "ms-azuretools.vscode-docker",
+    "mikestead.dotenv",
+    "editorconfig.editorconfig",
+    "eamodio.gitlens",
+    "jasonlhy.hungry-delete",
+    "VisualStudioExptTeam.vscodeintellicode",
+    "BobbyZrncev.intellij-parameter-hints",
+    "PKief.material-icon-theme",
+    "neilbrayfield.php-docblocker",
+    "marabesi.php-import-checker",
+    "bmewburn.vscode-intelephense-client",
+    "phiter.phpstorm-snippets",
+    "foxundermoon.shell-format",
+    "pflannery.vscode-versionlens",
+  ]
+}
